@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Head from "next/head";
+import PlausibleProvider from "next-plausible"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PexelXus: Social meets VTU",
     description: "No more switching between Whatsapp and Opay. Coming soon to Nigeria!",
-    url: "https://getpexelxus.com",
+    url: "https://getpexelxus.vercel.app",
     siteName: "Pexelxus",
     images: [
       {
@@ -51,15 +52,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.png" />
-        <script defer data-domain="getpexelxus.vercel.app" src="https://plausible.io/js/scrip.js" />
-      </Head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      <PlausibleProvider
+        domain="getpexelxus.vercel.app"
+        customDomain="https://analytics.getpexelxus.vercel.app"
+        trackOutboundLinks={true}
+        enabled={process.env.NODE_ENV === 'production'}
       >
-        {children}
-      </body>
+        <Head>
+          <link rel="icon" href="/favicon.png" />
+          <script defer data-domain="getpexelxus.vercel.app" src="https://plausible.io/js/script.hash.outbound-links.pageview-props.tagged-events.js"></script>
+        </Head>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </PlausibleProvider>
     </html>
   );
 }
