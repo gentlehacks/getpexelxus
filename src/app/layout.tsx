@@ -53,7 +53,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.png" />
-        <script defer data-domain="https://getpexelxus.com" src="https://plausible.io/js/scrip.js" />
+        <script defer data-domain="getpexelxus.vercel.app" src="https://plausible.io/js/scrip.js" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
