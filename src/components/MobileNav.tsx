@@ -30,7 +30,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
-            transition={{duration: 0.2, delay: 0.4}}
+            transition={{duration: 0.2, delay: 0.2}}
           >
             <Link 
               href="#features"
@@ -42,7 +42,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
-            transition={{duration: 0.2, delay: 0.6}}
+            transition={{duration: 0.2, delay: 0.3}}
           >
             <Link 
               href="#how-it-works"
@@ -54,7 +54,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
-            transition={{duration: 0.2, delay: 0.8}}
+            transition={{duration: 0.2, delay: 0.4}}
           >
             <Link 
               href="#faq"
@@ -66,7 +66,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
-            transition={{duration: 0.2, delay: 1}}
+            transition={{duration: 0.2, delay: 5}}
           >
             <Link 
               href="#waitlistform"
