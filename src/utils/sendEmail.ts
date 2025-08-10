@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 export async function sendWelcomeEmail(name: string, email: string) {
   try {
       await resend.emails.send({
-        from: "Pexelxus <noreply@pexelxus.com>",
+        from: "Pexelxus <noreply@pexelxus.vercel.app>",
         to: email,
         subject: "🎉 Welcome to the Pexelxus Waitlist!",
         html: `
@@ -17,7 +17,7 @@ export async function sendWelcomeEmail(name: string, email: string) {
               We’re thrilled to have you with us and can’t wait to share updates as we prepare for launch.
             </p>
             <a href="https://getpexelxus.vercel.app" 
-               style="display: inline-block; padding: 12px 20px; background-color: #4CAF50; color: white; 
+               style="display: inline-block; padding: 12px 20px; background-color:rgb(1, 43, 230); color: white; 
                border-radius: 5px; text-decoration: none; font-weight: bold;">
                Visit Our Website
             </a>
