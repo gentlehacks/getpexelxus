@@ -37,7 +37,7 @@ const HeroSection = () => {
         </motion.p>
 
         {/* DownLoad Buttons */}
-        <div className="mt-[3rem] w-full flex items-center justify-between px-[2rem] xs:px-[3.5rem] sm:px-[4.5rem] md:px-[10rem] lg:px-[4rem] xl:px-[6rem] lg:text-left lg:justify-left gap-[0.2rem]">
+        <div className="mt-[3rem] w-full flex items-center justify-between px-[0.2rem] xs:px-[2rem] sm:px-[4.5rem] md:px-[10rem] lg:px-[4rem] xl:px-[6rem] lg:text-left lg:justify-left gap-[0.2rem]">
           <Link href="/download">
             <motion.button className="py-3 px-3 rounded-xl bg-gray-900 hover:bg-gray-800 text-gray-100 flex items-center text-[0.9rem] justify-center text-sm transition-all duration-100 cursor-pointer">
               <FaApple className="mr-1 text-xl" /> 
