@@ -57,7 +57,7 @@ const Header = () => {
                   how-it-work
                 </motion.p>
               </Link>
-              <Link href="#how-it-works">
+              <Link href="#faq">
                 <motion.p
                   whileHover={{y: 2}}
                   whileTap={{y: [3, 0]}}
