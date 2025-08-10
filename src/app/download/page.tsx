@@ -31,7 +31,7 @@ const Download = () => {
         Comming Soon...
       </h1>
       <p className="text-center mt-3 text-gray-800">
-        We&apos;re building the easiest way to buy airtime and connect with friends for Nigerians.
+        We&apos;re building the easiest way to buy airtime and connect with friends in Nigerian.
       </p>
       <Link href="/#waitlistform"
         className="mt-[4rem]"

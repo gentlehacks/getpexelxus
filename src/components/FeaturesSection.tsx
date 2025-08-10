@@ -26,7 +26,7 @@ const FeaturesSection = () => {
             viewport={{ 
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
-            transition={{duration: 0.5, ease: "linear"}}
+            transition={{duration: 0.6}}
           className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-white rounded-xl shadow-sm items-center justify-center hover:bg-blue-300 hover:rounded-b-none transition-all duration-200 mb-[6rem]">
             <Image
               src={"/all-network.svg"}
@@ -76,7 +76,7 @@ const FeaturesSection = () => {
             viewport={{ 
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
-            transition={{duration: 0.5, ease: "linear"}}
+            transition={{duration: 0.6}}
           className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-white rounded-xl shadow-md items-center justify-center hover:bg-blue-300 hover:rounded-b-none transition-all mb-[4.5rem]">
             <Image
               src={"/security.svg"}
