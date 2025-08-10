@@ -22,19 +22,22 @@ const Header = () => {
         <ul className="w-full flex items-center justify-between">
           <div className="flex items-center">
             {/* Pexelxus - Logo */}
-            <div className="w-[2rem] h-[2rem] flex items-center justify-center rounded-full object-cover overflow-hidden border-1 border-gray-400">
-              <Image
-                src="/favicon.png"
-                width={100}
-                height={100}
-                alt="PexelXus: Social meets VTU"
-                priority
-                className="w-[120%] "
-              />
-            </div>
-            <h3 className="text-[1rem] font-semibold ml-2">
-              Pexelxus
-            </h3>
+            <Link href="#" className="flex items-center">
+              <div className="w-[2rem] h-[2rem] flex items-center justify-center rounded-full object-cover overflow-hidden border-1 border-gray-400">
+                <Image
+                  src="/favicon.png"
+                  width={100}
+                  height={100}
+                  alt="PexelXus: Social meets VTU"
+                  priority
+                  className="w-[120%] "
+                />
+              </div>
+              <h3 className="text-[1rem] font-semibold ml-2">
+                Pexelxus
+              </h3>
+            </Link>
+            
             {/* Desktop Nav */}
             <div className="space-x-4 hidden sm:flex md:flex items-center text-sm ml-12">
               <Link href="#features" >

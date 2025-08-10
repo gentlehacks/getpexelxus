@@ -21,7 +21,7 @@ const ProofAndCtaBtn = () => {
       </motion.h1>
       <motion.div className="flex items-center">
         <div className="flex items-center mr-3">
-          <div className="w-[2.5rem] h-[2.5rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.9rem]">
+          <div className="w-[2.5rem] h-[2.5rem] sm:w-[3rem] sm:h-[3rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.8rem]">
             <Image
               src="/lanre.jpg"
               alt="Proof Image"
@@ -29,7 +29,7 @@ const ProofAndCtaBtn = () => {
               height={100}
             />  
           </div>
-          <div className="w-[2.5rem] h-[2.5rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.9rem]">
+          <div className="w-[2.5rem] h-[2.5rem] sm:w-[3rem] sm:h-[3rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.8rem]">
             <Image
               width={100}
               src="/desola.jpg"
@@ -37,7 +37,7 @@ const ProofAndCtaBtn = () => {
               height={100}
             />  
           </div>
-          <div className="w-[2.5rem] h-[2.5rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.9rem]">
+          <div className="w-[2.5rem] h-[2.5rem] sm:w-[3rem] sm:h-[3rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.8rem]">
             <Image
               src="/mustapha.jpg"
               alt="Proof Image"
@@ -45,7 +45,7 @@ const ProofAndCtaBtn = () => {
               height={100}
             />  
           </div>
-          <div className="w-[2.5rem] h-[2.5rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.9rem]">
+          <div className="w-[2.5rem] h-[2.5rem] sm:w-[3rem] sm:h-[3rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden mr-[-0.8rem]">
             <Image
               src="/muhammed-salihu.PNG"
               alt="Proof Image"
@@ -53,7 +53,7 @@ const ProofAndCtaBtn = () => {
               height={100}
             />  
           </div>
-          <div className="w-[2.5rem] h-[2.5rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden ">
+          <div className="w-[2.5rem] h-[2.5rem] sm:w-[3rem] sm:h-[3rem] flex items-center justify-center border-2 border-gray-400 rounded-full overflow-hidden ">
             <Image
               src="/aliyu-suleiman.jpg"
               alt="Proof Image"

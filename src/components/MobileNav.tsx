@@ -83,7 +83,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             whileTap={{scale: [0.8, 1.1, 1]}}
             exit={{opacity: 0, scale: 0.8}}
           onClick={() => setIsOpenMenu(false)}
-          className="absolute top-6 left-6 flex items-center justify-center hover:text-gray-700 cursor-pointer"
+          className="absolute top-6 left-6 flex p-2 items-center justify-center hover:text-gray-700 cursor-pointer"
           >
             <FaXmark className="text-3xl" />
           </motion.div>

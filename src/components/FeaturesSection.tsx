@@ -37,7 +37,7 @@ const FeaturesSection = () => {
               className="w-[80%]"
             />
             <h1 className="text-lg font-semibold mt-[4rem]">
-              Lightning Fast Airtime/data
+              Lightning Fast Airtime and Data
             </h1>
             <p className="text-md text-gray-800 mt-2 text-center">
               Purchase MTN/Airtel/Glo airtime in 10 seconds.
@@ -62,7 +62,7 @@ const FeaturesSection = () => {
               className="w-[60%]"
             />
             <h1 className="text-lg font-semibold mt-[4rem]">
-              All-in-One Social
+              Social Features
             </h1>
             <p className="text-md text-gray-800 mt-2 text-center">
               Post updates, connect with family and friends

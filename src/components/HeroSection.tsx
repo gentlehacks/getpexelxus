@@ -33,7 +33,7 @@ const HeroSection = () => {
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, type: 'spring', stiffness: 100, delay: 1}}
         className="text-md text-gray-800 sm:text-lg text-center lg:text-left mt-4">
-          Save ₦100 on every transaction compared to bank apps + enjoy seamless social features designed for <span className="border-b-1 border-green-500"> Nigerians.</span> 
+          Save ₦50 on every transaction compared to bank apps + enjoy seamless social features designed for <span className="border-b-1 border-green-500"> Nigerians.</span> 
         </motion.p>
 
         {/* DownLoad Buttons */}
@@ -73,9 +73,9 @@ const HeroSection = () => {
         <motion.div
           initial={{opacity: 0, scale: 0.7}}
           whileInView={{opacity: 1, scale: 1}}
-          transition={{duration: 1, type: 'spring', stiffness: 200, delay: 2}}
+          transition={{duration: 1, type: 'spring', stiffness: 200}}
           viewport={{ 
-            margin: "0px 0px -10% 0px"
+            margin: "0px 0px -12% 0px"
           }}
         className="px-2 py-1 bg-gray-200 flex items-center justify-center rounded-xl"
         >
@@ -85,9 +85,9 @@ const HeroSection = () => {
           <motion.div
             initial={{opacity: 0, scale: 0.7}}
             whileInView={{opacity: 1, scale: 1}}
-            transition={{duration: 1, type: 'spring', stiffness: 200, delay: 2.5}}
+            transition={{duration: 1, type: 'spring', stiffness: 200, delay: 0.5}}
             viewport={{ 
-              margin: "0px 0px -10% 0px" 
+              margin: "0px 0px -12% 0px" 
             }}
           className="px-2 py-1 bg-gray-200 flex items-center justify-center rounded-xl"
           >

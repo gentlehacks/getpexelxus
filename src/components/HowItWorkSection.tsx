@@ -30,13 +30,13 @@ const HowItWorkSection = () => {
         > 
           <div className="flex flex-col items-center justify-center">
             <div className="w-[3.5rem] h-[3.5rem] rounded-full bg-blue-500 flex items-center justify-center"> 
-              <LuUserRound className="text-white" />
+              <LuUserRound className="text-white text-xl" />
             </div>
             <h1 className="text-lg font-semibold mt-4">
               Join Waitlist
             </h1>
             <p className="text-md text-center text-gray-800 mt-2">
-              Join the Waitlist Now for early access!
+              Join the Waitlist Now for Early access!
             </p>
           </div>
           
@@ -56,7 +56,7 @@ const HowItWorkSection = () => {
         > 
           <div className="flex flex-col items-center justify-center">
             <div className="w-[3.5rem] h-[3.5rem] rounded-full bg-blue-500 flex items-center justify-center"> 
-               <LuKeyRound className="text-white" />
+               <LuKeyRound className="text-white text-xl" />
             </div>
             <h1 className="text-lg font-semibold mt-4">
               Get VIP Access
@@ -82,7 +82,7 @@ const HowItWorkSection = () => {
         > 
           <div className="flex flex-col items-center justify-center">
             <div className="w-[3.5rem] h-[3.5rem] rounded-full bg-blue-500 flex items-center justify-center"> 
-               <MdOutlineCelebration className="text-white" />
+               <MdOutlineCelebration className="text-white text-xl" />
             </div>
             <h1 className="text-lg font-semibold mt-4">
               Recharge & Connect

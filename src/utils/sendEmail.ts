@@ -15,5 +15,4 @@ export async function sendWelcomeEmail(name: string, email: string) {
     console.error("❌ Email sending error:", err);
   }
 
-  // Optional: send SMS with Termii or Twilio here too
 }
