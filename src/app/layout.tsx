@@ -54,14 +54,12 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.png" />
-        <script defer data-domain="getpexelxus.vercel.app" src="https://plausible.io/js/script.hash.outbound-links.pageview-props.tagged-events.js"></script>
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <PlausibleProvider
           domain="getpexelxus.vercel.app"
-          customDomain="https://analytics.getpexelxus.vercel.app"
           trackOutboundLinks={true}
           enabled={process.env.NODE_ENV === 'production'}
         >

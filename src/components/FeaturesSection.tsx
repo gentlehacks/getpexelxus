@@ -26,13 +26,14 @@ const FeaturesSection = () => {
             viewport={{ 
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
-            transition={{duration: 0.5, ease: "easeInOut"}}
+            transition={{duration: 0.5, ease: "linear"}}
           className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-white rounded-xl shadow-sm items-center justify-center hover:bg-blue-300 hover:rounded-b-none transition-all duration-200 mb-[6rem]">
             <Image
               src={"/all-network.svg"}
               alt="all-network"
               width={100}
               height={100}
+              priority
               className="w-[80%]"
             />
             <h1 className="text-lg font-semibold mt-[4rem]">
@@ -50,13 +51,14 @@ const FeaturesSection = () => {
             viewport={{ 
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
-            transition={{duration: 0.5, ease: 'easeInOut'}}
+            transition={{duration: 0.5, ease: 'linear'}}
           className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-white rounded-xl shadow-md items-center justify-center hover:bg-blue-300 hover:rounded-b-none transition-all mb-[4.5rem]">
             <Image
               src={"/social.svg"}
               alt="social-illustrate"
               width={100}
               height={100}
+              priority
               className="w-[60%]"
             />
             <h1 className="text-lg font-semibold mt-[4rem]">
@@ -74,13 +76,14 @@ const FeaturesSection = () => {
             viewport={{ 
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
-            transition={{duration: 0.5, ease: "easeInOut"}}
+            transition={{duration: 0.5, ease: "linear"}}
           className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-white rounded-xl shadow-md items-center justify-center hover:bg-blue-300 hover:rounded-b-none transition-all mb-[4.5rem]">
             <Image
               src={"/security.svg"}
               alt="security-illustrate"
               width={100}
               height={100}
+              priority
               className="w-[60%]"
             />
             <h1 className="text-lg font-semibold mt-[4rem]">

@@ -88,7 +88,7 @@ const HowItWorkSection = () => {
               Recharge & Connect
             </h1>
             <p className="text-md text-center text-gray-800 mt-2">
-              Buy airtime or data in one tap and connect to friends easily
+              Buy airtime or data in one tap and connect with friends easily
             </p>
           </div>
         </motion.div>

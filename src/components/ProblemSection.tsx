@@ -18,7 +18,8 @@ const ProblemSection = () => {
           src="/lady-pic.svg" 
           alt="mockup phones" 
           width={100} 
-          height={100} 
+          height={100}
+          priority 
           className="w-[120%] -mb-20"
         />
         <div className="absolute top-[2rem] right-[25%] md:right-[30%] scale-[1.2] px-2 bg-blue-400 flex items-center justify-center rounded-full">
