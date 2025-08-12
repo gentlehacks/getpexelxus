@@ -30,6 +30,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Failed to join waitlist' }, { status: 500 })
   }
 
+  console.log("📧 Sending email to:", email);
   sendWelcomeEmail(name, email);
 
   return NextResponse.json({ message: '🎉 Successfully joined the waitlist!' }, { status: 200 })

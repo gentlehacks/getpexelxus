@@ -61,7 +61,8 @@ export function welcomeEmailTemplate(name: string) {
           <p>We’re excited to have you on board! 🎉 You’re now officially part of the <strong>Pexelxus Waitlist</strong>.</p>
           <p>We’re building something amazing, and you’ll be among the first to know when we launch.</p>
           <p>Stay tuned — your journey with us has just begun!</p>
-          <a href="https://pexelxus.vercel.app" class="btn">Visit Our Website</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3BwIYAnob79C4dnYzTJTOEtypjq6hJIz7yyr12abgMaxDlQ/viewform?usp=dialog" class="btn">Fill survey now 🙏</a>
+          <p style="color:rgb(100, 100, 100); margin-top: 30px;">Salihu Adamu - CEO at PexelXus</p>
         </div>
         <div class="footer">
           <p>© ${new Date().getFullYear()} Pexelxus. All rights reserved.</p>

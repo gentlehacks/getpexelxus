@@ -51,7 +51,7 @@ const WaitlistForm = () => {
       setMessage("⚠ You already joined the waitlist.")
     }
 
-    setMessage('🎉 Successfully joined the waitlist!')
+    setMessage('🎉 Successfully joined the waitlist, check your email now!')
     setName('')
     setEmail('')
     setTimeout(() => route.push("/#faq"), 8000);

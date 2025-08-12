@@ -1,18 +1,21 @@
-// utils/mailer.ts
-import { Resend } from 'resend'
+import SibApiV3Sdk from "@sendinblue/client";
 import { welcomeEmailTemplate } from './welcomeEmailTemplate';
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function sendWelcomeEmail(name: string, email: string) {
+
+  const brevo = new SibApiV3Sdk.TransactionalEmailsApi();
+  brevo.setApiKey(SibApiV3Sdk.TransactionalEmailsApiApiKeys.apiKey, process.env.BREVO_API_KEY!);
+
   try {
-      await resend.emails.send({
-        from: "Pexelxus <noreply@pexelxus.vercel.app>",
-        to: email,
-        subject: "🎉 Welcome to Pexelxus",
-        html: welcomeEmailTemplate(name),
+      await brevo.sendTransacEmail({
+        sender: { email: process.env.BREVO_SENDER_EMAIL!, name: process.env.BREVO_SENDER_NAME! },
+        to: [{ email }],
+        subject: "🎉 Welcome to the PexelXus!",
+        htmlContent: welcomeEmailTemplate(name),
       });
+      console.log("✅ Email sent");
     } catch (error) {
-      console.log(`Failed to send email to ${name} --- Erorr: ${error}`);
+      console.log("❌ Email sending failed: ", error);
     }
 
 };
