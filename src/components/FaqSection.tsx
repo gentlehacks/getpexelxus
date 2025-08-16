@@ -24,7 +24,6 @@ const FaqSection = () => {
               <p>• MTN</p>
               <p>• Airtel</p>
               <p>• Glo </p>
-              <p>• 9mobile</p>
               <p>No matter your provider!</p>
             </AccordionContent>
           </AccordionItem>

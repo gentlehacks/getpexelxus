@@ -5,24 +5,25 @@ import Link from "next/link";
 import { HiBadgeCheck } from "react-icons/hi";
 import { FcSms } from "react-icons/fc";
 import { FcChargeBattery } from "react-icons/fc";
-import { FaApple, FaGooglePlay } from "react-icons/fa6";
+import { BiDownload } from "react-icons/bi";
+import { FaShieldAlt } from "react-icons/fa";
 
 
 
 
 const HeroSection = () => {
   return (
-    <div className="w-full mt-[4rem] flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4">
+    <div className="bg-[#0F172A] lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[3rem] lg:pt-0">
       <div className="w-[90%] flex flex-col items-center justify-center lg:pl-[5%]">
         <motion.div 
           initial={{opacity: 0, scale: 0.8}}
           animate={{opacity: 1, scale: 1}}
           transition={{duration: 0.4, delay: 0.5}}
-        className="flex items-center justify-center px-2 py-1 text-[13px] text-[10px] sm:text-[10px] md:text-xs lg:text-xs rounded-full bg-gray-300 border-1 border-blue-300 text-gray-800 mb-2">
+        className="flex items-center justify-center px-2 py-1 text-[13px] text-[10px] sm:text-[10px] md:text-xs lg:text-xs rounded-full bg-[#b3dfd2] border-1 border-green-400 text-gray-800 mb-2">
           <HiBadgeCheck className="text-blue-500 text-[1.1rem] mr-1" />
           Trusted by 5,000+ users
         </motion.div>
-        <h1 className="text-[1.8rem] sm:text-[2rem] md:text-[2.8] lg:text-[2.2rem] font-semibold  text-center lg:text-left">
+        <h1 className="mt-3 text-gray-100 text-[1.8rem] sm:text-[2rem] md:text-[2.8] lg:text-[2.2rem] font-semibold  text-center lg:text-left">
           The Smart Way to Buy Airtime and Stay 
           <span className="text-green-500 ml-3">
             Connected
@@ -32,26 +33,22 @@ const HeroSection = () => {
           initial={{opacity: 0, y: '50px'}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, type: 'spring', stiffness: 100, delay: 1}}
-        className="text-md text-gray-800 sm:text-lg text-center lg:text-left mt-4">
-          Save ₦50 on every transaction compared to bank apps + enjoy seamless social features designed for <span className="border-b-1 border-green-500"> Nigerians.</span> 
+        className="text-md text-gray-400 sm:text-lg text-center lg:text-left mt-4">
+          Save <span className="text-blue-500"> ₦50 </span> on every transaction compared to bank apps + enjoy seamless social features designed for <span className="border-b-1 border-green-500"> Nigerians.</span> 
         </motion.p>
 
         {/* DownLoad Buttons */}
-        <div className="mt-[3rem] w-full flex items-center justify-between px-[0.2rem] xs:px-[2rem] sm:px-[4.5rem] md:px-[10rem] lg:px-[4rem] xl:px-[6rem] lg:text-left lg:justify-left gap-[0.2rem]">
+        <div className="mt-[3rem] w-full flex items-center justify-center">
           <Link href="/download">
-            <motion.button className="py-3 px-3 rounded-xl bg-gray-900 hover:bg-gray-800 text-gray-100 flex items-center text-[0.9rem] justify-center text-sm transition-all duration-100 cursor-pointer">
-              <FaApple className="mr-1 text-xl" /> 
-              Get on iPhone
-            </motion.button>
-          </Link>
-          <Link href="/download">
-            <motion.button className="py-[10px] px-3 rounded-xl bg-gray-900 hover:bg-gray-800 text-gray-100 flex items-center text-[0.9rem] justify-center font-light transition-all duration-100 cursor-pointer">
-              <FaGooglePlay className="mr-1 text-2xl" /> 
-              Get on Android
+            <motion.button className="py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-gray-100 flex items-center text-[0.9rem] justify-center text-sm transition-all duration-100 cursor-pointer">
+              <BiDownload className="mr-1 text-xl" />
+              Download
             </motion.button>
           </Link>
         </div>
-        <p className="mt-[5rem]">🔒 Secured by Paystack</p>
+        <p className="mt-[5rem] text-gray-100 flex items-center">
+          <FaShieldAlt className="text-xl mr-2" /> 
+          Secured by Paystack</p>
       </div>
       <div className="w-full flex flex-col items-center justify-center lg:mt-[-5rem]">
         {/* Mockups */}
@@ -77,7 +74,7 @@ const HeroSection = () => {
           viewport={{ 
             margin: "0px 0px -12% 0px"
           }}
-        className="px-2 py-1 bg-gray-200 flex items-center justify-center rounded-xl"
+        className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
         >
             <FcSms />
             <p className="ml-3">Connect</p>
@@ -89,7 +86,7 @@ const HeroSection = () => {
             viewport={{ 
               margin: "0px 0px -12% 0px" 
             }}
-          className="px-2 py-1 bg-gray-200 flex items-center justify-center rounded-xl"
+          className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
           >
             <FcChargeBattery />
             <p className="ml-3 text-">Recharge</p>

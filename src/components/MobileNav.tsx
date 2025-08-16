@@ -1,8 +1,8 @@
 "use client"
 import {motion, AnimatePresence} from "framer-motion";
 import Link from "next/link";
+import { CgGift } from "react-icons/cg";
 import { FaXmark } from "react-icons/fa6";
-import { IoGiftOutline } from "react-icons/io5";
 
 interface MolbileNavProps {
   setIsOpenMenu: (isOpenMenu: boolean) => void;
@@ -33,10 +33,10 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             transition={{duration: 0.2, delay: 0.2}}
           >
             <Link 
-              href="#features"
+              href="/"
               onClick={() => setIsOpenMenu(false)}
               className="w-full py-4 rounded-md flex items-center justify-center hover:bg-gray-100 transition-all duration-200 mt-[2rem]"
-            >Features</Link>
+            >Home</Link>
           </motion.div>
           <motion.div
             initial={{opacity: 0}}
@@ -45,10 +45,10 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             transition={{duration: 0.2, delay: 0.3}}
           >
             <Link 
-              href="#how-it-works"
+              href="/about"
               onClick={() => setIsOpenMenu(false)}
               className="w-full py-4 rounded-md flex items-center justify-center hover:bg-gray-100 transition-all duration-200"
-            >How it works</Link>
+            >About</Link>
           </motion.div>
           <motion.div
             initial={{opacity: 0}}
@@ -69,12 +69,11 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             transition={{duration: 0.2, delay: 0.6}}
           >
             <Link 
-              href="#waitlistform"
+              href="/contact"
               onClick={() => setIsOpenMenu(false)}
               className="w-full py-4 rounded-md flex items-center justify-center hover:bg-gray-100 transition-all duration-200"
             >
-              <IoGiftOutline className="mr-3 text-lg text-blue-500" />
-              Join Waitlist!
+              Contact
             </Link>
           </motion.div>
           <motion.div
@@ -87,6 +86,25 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
           >
             <FaXmark className="text-3xl" />
           </motion.div>
+
+          <div className="w-full flex flex-col items-center justify-center">
+            <motion.button
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              exit={{opacity: 0}}
+              transition={{duration: 0.2, delay: 0.6}}
+            >
+              <Link 
+                href="/contact"
+                onClick={() => setIsOpenMenu(false)}
+                className="w-full px-6 py-4 bg-[#0F172A] text-gray-100 rounded-full flex items-center justify-center hover:bg-gray-100 transition-all duration-200"
+              >
+                <CgGift className="mr-2 text-xl" />
+                Donate
+              </Link>
+            </motion.button>
+          </div>
+
         </motion.div>
       </motion.div>
     </AnimatePresence>

@@ -11,7 +11,7 @@ const ProblemSection = () => {
       transition={{duration: 1}}
     >
      <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center">
-       ⏰ Save your Time with PexelXus, No More Wahala!
+       ⏰ Save your Time with <span className="text-blue-600"> PexelXus, </span>No More Wahala!
      </h1>
       <div className="relative mt-[3rem] w-[20rem] h-[20rem] xs:w-[18rem] xs:h-[18rem] sm:w-[25rem] sm:h-[25rem] md:w-[28rem] md:h-[28rem] lg:w-[30rem] lg:h-[30rem] flex items-center justify-center bg-blue-100 rounded-full overflow-hidden"> 
         <Image 

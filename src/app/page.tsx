@@ -1,6 +1,5 @@
 "use client"
 import FeaturesSection from '@/components/FeaturesSection'
-import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import ProblemSection from '@/components/ProblemSection'
 import HowItWorkSection from '@/components/HowItWorkSection'
@@ -15,9 +14,6 @@ const Home = () => {
 
   return (
     <main className='relative w-full h-full bg-gray-50 text-gray-900'>
-
-      {/* Header Section */}
-      <Header />
       
       {/* Hero section */}
       <HeroSection />

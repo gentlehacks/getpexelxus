@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import PlausibleProvider from "next-plausible"
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Poppins } from 'next/font/google';
+import Header from "@/components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // choose weights you need
+  variable: '--font-poppins',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   icons: {
@@ -56,13 +54,14 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} antialiased`}
       >
         <PlausibleProvider
           domain="getpexelxus.vercel.app"
           trackOutboundLinks={true}
           enabled={process.env.NODE_ENV === 'production'}
         >
+        <Header />
           {children}
         </PlausibleProvider>
       </body>

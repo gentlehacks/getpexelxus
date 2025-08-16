@@ -13,7 +13,7 @@ const HowItWorkSection = () => {
   return (
     <div 
       id="how-it-works"
-    className="w-full flex items-center justify-center flex-col mt-[10rem] overflow-hidden">
+    className="bg-bluw-500 w-full flex items-center justify-center flex-col mt-[10rem] overflow-hidden">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
         How to get started
       </h1>

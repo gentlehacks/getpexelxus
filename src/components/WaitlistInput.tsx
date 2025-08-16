@@ -43,11 +43,13 @@ const WaitlistInput = ({
           onBlur={() => setIsFocused(false)}
           placeholder=" "
           required
-          className="w-full px-4 pl-10 py-3 rounded-lg border-1 border-purple-300 focus:outline-none focus:ring-2 focus:ring-blue-500 "
+          className="w-full px-4 pl-10 py-3 rounded-lg border-1 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 "
         />
         <motion.label 
           htmlFor={id}
-        className='absolute flex items-center px-[3px] justify-center left-10 text-md text-left text-gray-800 bg-gray-100 w-fit-content pointer-events-none'
+        className={`absolute flex items-center px-[3px] justify-center left-10 text-md text-left bg-white w-fit-content pointer-events-none
+          ${shouldFloat ? 'text-blue-600' : 'text-gray-900'}  
+        `}
           initial={{y: 0, scale: 1}}
           animate={{
             y: shouldFloat 

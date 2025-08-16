@@ -84,22 +84,22 @@ const WaitlistForm = () => {
             viewport={{ 
             margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
-          className="text-2xl sm:text-3xl font-semibold inline-block">
-            7,310
+          className="text-2xl sm:text-3xl text-gray-900 font-semibold inline-block">
+            5,000+
           </motion.h1>
-          <FaUsers className="ml-2 text-xl text-purple-400" />
+          <FaUsers className="ml-2 text-xl text-blue-400" />
         </div>
-        <p className="text-md text-gray-900">Nigerians already Joined</p>
+        <p className="text-md text-gray-700">Nigerians already Joined</p>
       </motion.div>
 
       <motion.form  onSubmit={handleSubmit}
         initial={{opacity: 0, y: '150px'}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 1, ease: 'easeOut'}}
-      className="w-[100%] sm:w-[95%] md:w-[40rem] lg:w-[40rem] flex flex-col items-center justify-center p-4 pt-6 bg-gray-100 rounded-xl shadow-lg mt-[7rem]">
+      className="w-[100%] sm:w-[90%] md:w-[35rem] lg:w-[40rem] flex flex-col items-center justify-center p-5 pt-8 bg-white text-gray-900 rounded-xl shadow-xl mt-[7rem]">
         <h1 className="text-lg sm:text-lg md:text-xl lg:text-xl font-semibold">
           Be the First to 
-          <span className="border-b-1 border-yellow-300"> Experience </span> PexelXUS!
+          <span className="border-b-1 border-blue-500"> Experience </span> PexelXUS!
         </h1>
 
         <div className="w-full flex flex-col mt-[4rem]">
@@ -151,7 +151,7 @@ const WaitlistForm = () => {
           {/* Trust badge */}
           <div className="flex items-center justify-center w-full mt-6 mb-4">
             <div className="w-fit px-2 py-1 flex items-center justify-center mt-8">
-              <HiBadgeCheck className="text-blue-500 text-[1.2rem] mr-1" />
+              <HiBadgeCheck className="text-blue-500 text-[1.4rem] mr-1" />
               <p className="text-sm">
                 Joined by 5,000+ users in Nigeria
               </p>
