@@ -28,7 +28,7 @@ export default function DonatePage() {
   // };
 
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 px-6 py-16 md:px-20">
+    <main className="min-h-screen bg-gray-50 text-gray-900 px-2 py-16 md:px-20">
       <section className="max-w-3xl mx-auto text-center">
         <h1 className="text-gray-900 text-4xl md:text-5xl font-bold mb-4">Support Pexelxus</h1>
         <p className="text-lg text-gray-600 mt-[1.5rem]">
@@ -37,7 +37,7 @@ export default function DonatePage() {
         </p>
       </section>
 
-      <section className="max-w-3xl mx-auto mt-12 bg-white shadow-lg rounded-2xl p-8 text-center">
+      <section className="w-[100%] max-w-3xl mx-auto mt-12 bg-white shadow-lg rounded-2xl py-8 px-4 sm:px-6 md:px-8 text-center">
         <h2 className="text-gray-900 text-2xl font-semibold mb-6">Make a Donation</h2>
 
         {/* Name */}
