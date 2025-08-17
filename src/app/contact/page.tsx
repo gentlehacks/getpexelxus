@@ -14,7 +14,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="max-w-3xl mx-auto mt-12 bg-white shadow-lg rounded-2xl p-8">
+      <section className="w-[100%] max-w-3xl mx-auto mt-12 bg-white shadow-lg rounded-2xl py-8 px-5">
         <form className="space-y-6">
           {/* Name */}
           <div>

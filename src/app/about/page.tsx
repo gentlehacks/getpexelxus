@@ -10,11 +10,11 @@ const About = () => {
         <h1 className="text-4xl md:text-5xl font-bold mb-4">About PexelXus</h1>
         <p className="text-lg text-gray-600">
           PexelXus is a Nigerian startup where you can{" "}
-          <span className="font-semibold text-blue-600">
+          <span className="font-semibold ">
             buy airtime, data, gift friends
           </span>{" "}
           and also{" "}
-          <span className="font-semibold text-blue-600">
+          <span className="font-semibold ">
             share content
           </span>
           . We are building a platform that’s simple, reliable, and made for
@@ -26,7 +26,7 @@ const About = () => {
       <section className="max-w-4xl mx-auto mt-16 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative w-full h-72 md:h-96 rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/aliyu-suleiman.jpg" 
+            src="/muhammed-salihu.PNG" 
             alt="Founder"
             fill
             priority
@@ -45,7 +45,7 @@ const About = () => {
           {/* Actions */}
           <div className="flex gap-4">
             <Link
-              href="/waitlist"
+              href="/#waitlistform"
               className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
             >
               Join Waitlist
@@ -65,8 +65,8 @@ const About = () => {
         <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
         <p className="text-gray-600">
           At PexelXus, we believe in making technology more{" "}
-          <span className="font-semibold text-blue-600">accessible</span> and{" "}
-          <span className="font-semibold text-blue-600">empowering</span> for
+          <span className="font-semibold">accessible</span> and{" "}
+          <span className="font-semibold">empowering</span> for
           everyone. Our mission is to connect people through simple, secure, and
           fun digital experiences.
         </p>

@@ -4,7 +4,8 @@ import { useState } from "react";
 
 export default function DonatePage() {
   // const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || "";
-  const [amount, setAmount] = useState<number>(1000); 
+  const [name, setName] = useState<string>(""); 
+  const [amount, setAmount] = useState<number | string>(""); 
   const [email, setEmail] = useState<string>(""); 
   // const router = useRouter();
 
@@ -39,10 +40,20 @@ export default function DonatePage() {
       <section className="max-w-3xl mx-auto mt-12 bg-white shadow-lg rounded-2xl p-8 text-center">
         <h2 className="text-gray-900 text-2xl font-semibold mb-6">Make a Donation</h2>
 
+        {/* Name */}
+        <input
+          type="text"
+          placeholder="Enter your full-name"
+          className="w-full border border-gray-400 rounded-lg px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+
         {/* Email */}
         <input
           type="email"
-          placeholder="Enter your email"
+          placeholder="Email Address"
           className="w-full border border-gray-400 rounded-lg px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
           value={email}
           onChange={(e) => setEmail(e.target.value)}

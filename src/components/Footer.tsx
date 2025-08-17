@@ -32,16 +32,16 @@ const Footer = () => {
           <p className="text-[0.9rem]">Follow Us:</p>
           <div className="flex items-center justify-center gap-3 mt-3">
             <Link href="https://www.x.com/salihuadamu4678">
-              <FaSquareXTwitter className="relative text-[1.5rem] hover:text-pink-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
+              <FaSquareXTwitter className="relative text-[1.5rem] hover:text-blue-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
             </Link>
             <Link href="https://www.instagram.com/gent.lemanxus">
-              <FaSquareInstagram className="relative text-[1.5rem] hover:text-pink-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
+              <FaSquareInstagram className="relative text-[1.5rem] hover:text-pink-400 hover:mb-1 transition-all duration-200 cursor-pointer" />
             </Link>
             <Link href="https://www.facebook.com/profile.php?id=61575434355333">
-              <FaFacebookSquare className="relative text-[1.5rem] hover:text-pink-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
+              <FaFacebookSquare className="relative text-[1.5rem] hover:text-blue-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
             </Link>
             <Link href="https://www.linkedin.com/in/salihu-adamu-3b9b97290">
-              <FaLinkedin className="relative text-[1.5rem] hover:text-pink-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
+              <FaLinkedin className="relative text-[1.5rem] hover:text-blue-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
             </Link>
             
             

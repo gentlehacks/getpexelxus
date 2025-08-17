@@ -18,7 +18,7 @@ const HeroSection = () => {
         <motion.div 
           initial={{opacity: 0, scale: 0.8}}
           animate={{opacity: 1, scale: 1}}
-          transition={{duration: 0.4, delay: 0.5}}
+          transition={{duration: 0.4, delay: 0}}
         className="flex items-center justify-center px-2 py-1 text-[13px] text-[10px] sm:text-[10px] md:text-xs lg:text-xs rounded-full bg-[#b3dfd2] border-1 border-green-400 text-gray-800 mb-2">
           <HiBadgeCheck className="text-blue-500 text-[1.1rem] mr-1" />
           Trusted by 5,000+ users
@@ -32,7 +32,7 @@ const HeroSection = () => {
         <motion.p 
           initial={{opacity: 0, y: '50px'}}
           animate={{opacity: 1, y: 0}}
-          transition={{duration: 1, type: 'spring', stiffness: 100, delay: 1}}
+          transition={{duration: 1, type: 'spring', stiffness: 100, delay: 0.5}}
         className="text-md text-gray-400 sm:text-lg text-center lg:text-left mt-4">
           Save <span className="text-blue-500"> ₦50 </span> on every transaction compared to bank apps + enjoy seamless social features designed for <span className="border-b-1 border-green-500"> Nigerians.</span> 
         </motion.p>
@@ -55,7 +55,7 @@ const HeroSection = () => {
         <motion.div className="relative w-[100%] flex items-center justify-center mt-[2rem] "
           initial={{y: "200px", opacity: 0}}
           animate={{y: 0, opacity: 1}}
-          transition={{duration: 1, ease: 'easeOut', delay: 1.5}}
+          transition={{duration: 1, ease: 'easeOut', delay: 1}}
         >
           <Image 
             src="/phone-mockups.svg" 

@@ -91,7 +91,7 @@ const Header = () => {
               initial={{scale: 1}}
               whileTap={{scale: [1, 1.1, 1]}}
               onClick={() => setIsOpenMenu(!isOpenMenu)}
-            className="block sm:hidden ml-5 bg-gray-100 hover:bg-gray-200 transition-all duration-200 rounded-lg p-1 mr-4">
+            className="block md:hidden ml-5 bg-gray-100 hover:bg-gray-200 transition-all duration-200 rounded-lg p-1 mr-4">
               <BiMenu className="text-[1.7rem]" />
             </motion.div>
             <div className="hidden md:flex">
@@ -106,12 +106,12 @@ const Header = () => {
                   Donate
                 </motion.button>
               </Link>
-              <Link href="#waitlistform">
+              <Link href="/#waitlistform">
                 <motion.button 
                   initial={{scale: 1}}
                   whileTap={{scale: [0.9, 1.1, 1], backgroundColor: 'gray'}}
                   transition={{duration: 0.5}}
-                onClick={() => route.push("#waitlistform")}
+                onClick={() => route.push("/#waitlistform")}
                 className="sticky top-4 right-3 px-6 py-4 flex items-center justify-center text-md rounded-full bg-gray-900 cursor-pointer hover:bg-gray-800 text-white font-medium transition-bg duration-200 ml-3">
                   Join Waitlist
                 </motion.button>

@@ -27,7 +27,7 @@ const FeaturesSection = () => {
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
             transition={{duration: 0.6, ease: "easeOut"}}
-          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-blue-400 rounded-xl shadow-sm items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
+          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-gray-200 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
             <Image
               src={"/all-network.svg"}
               alt="all-network"
@@ -52,7 +52,7 @@ const FeaturesSection = () => {
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
             transition={{duration: 0.5, ease: "easeOut"}}
-          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-blue-400 rounded-xl shadow-sm items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
+          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-gray-200 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
             <Image
               src={"/social.svg"}
               alt="social-illustrate"
@@ -77,7 +77,7 @@ const FeaturesSection = () => {
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
             transition={{duration: 0.6, ease: "easeOut"}}
-          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-blue-400 rounded-xl shadow-sm items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
+          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-gray-200 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
             <Image
               src={"/security.svg"}
               alt="security-illustrate"
