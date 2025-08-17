@@ -95,7 +95,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
               transition={{duration: 0.2, delay: 0.6}}
             >
               <Link 
-                href="/contact"
+                href="/donate"
                 onClick={() => setIsOpenMenu(false)}
                 className="w-full px-6 py-4 bg-[#0F172A] text-gray-100 rounded-full flex items-center justify-center hover:bg-gray-100 transition-all duration-200"
               >
