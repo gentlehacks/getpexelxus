@@ -25,7 +25,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
           exit={{opacity: 0, y: '-100px'}}
           transition={{duration: 0.2,}}
           onClick={(e) => e.stopPropagation()}
-        className="absolute top-0 left-0 pt-10 pb-10 w-[100%] h-screen flex sm:block md:hidden lg:hiddens flex-col justify-between space-y-1 bg-white rounded-b-xl border-b-1 border-gray-100 shadow-lg">
+        className="absolute top-0 left-0 pt-10 pb-20 w-[100%] h-screen flex sm:block md:hidden lg:hiddens flex-col justify-between space-y-1 bg-white rounded-b-xl border-b-1 border-gray-100 shadow-lg">
           <div className="w-full flex flex-col iitems-center justify-center gap-[1rem]">
             <motion.div
               initial={{opacity: 0}}

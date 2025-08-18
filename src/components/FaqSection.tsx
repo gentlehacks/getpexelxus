@@ -14,7 +14,7 @@ const FaqSection = () => {
       <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center">
         Frequently Asked Question
       </h1>
-       <p className="mt-2 text-gray-600 dark:text-gray-400">
+       <p className="mt-2 text-gray-700 text-gray-700 px-6 text-center">
         Got questions about PexelXus? We’ve got answers.
       </p>
       <div className="w-full flex flex-col items-center justify-center mt-[4rem]">

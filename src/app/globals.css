@@ -9,3 +9,27 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+
+html, body {
+  overflow: hidden; /* disable native scrollbar */
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #6366f1;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}

@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { CgGift } from "react-icons/cg";
 
 const About = () => {
   return (
@@ -24,46 +26,66 @@ const About = () => {
 
       {/* Founder Section */}
       <section className="max-w-4xl mx-auto mt-16 grid md:grid-cols-2 gap-10 items-center">
-        <div className="relative w-full h-72 md:h-96 rounded-2xl overflow-hidden shadow-lg">
+        <motion.div 
+          whileHover={{skewX: '2deg', skewY: '2deg'}}
+          transition={{type: 'spring', stiffness: 300}}
+        className="relative w-full h-72 md:h-96 rounded-2xl overflow-hidden shadow-lg border-3 border-gray-400">
           <Image
-            src="/muhammed-salihu.PNG" 
+            src="/aliyu-suleiman.jpg" 
             alt="Founder"
             fill
             priority
             className="object-cover"
           />
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Meet the Founder</h2>
-          <p className="text-gray-700 mb-6">
-            Hi, I’m <span className="font-bold">Salihu Adamu</span>, the founder
+        </motion.div>
+        <motion.div 
+          whileHover={{bottom: 3}}
+          transition={{type: 'spring', stiffness: 300}}
+        className="p-4 py-8 bg-[#0F172A] text-gray-100 rounded-2xl">
+          <h2 className="text-2xl font-semibold bg-gray-800 rounded-xl p-1 px-2 w-fit">Meet the Founder</h2>
+          <p className="text-gray-100 mt-8">
+            Hi, I’m <span className="font-bold text-gray-100">Salihu Adamu</span>, the founder
             of PexelXus. I started this journey to make digital transactions
             easier for Nigerians — giving you the power to connect, gift, and
             share with simplicity and trust.
           </p>
 
+          {/* Social Links */}
+          <div className="flex items-center gap-[1rem] mt-5">
+            <Link href="https://www.github.com/gentlehacks">
+              <p className="text-blue-500 hover:text-blue-600">Github</p>
+            </Link>
+            <Link href="https://www.linkedin.com/in/salihu-adamu-3b9b97290">
+              <p className="text-blue-400 hover:text-blue-600">LinkeIn</p>
+            </Link>
+          </div>
+
           {/* Actions */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 mt-12">
             <Link
               href="/#waitlistform"
-              className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
+              className="px-6 py-3 flex items-center justify-center rounded-xl bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
             >
               Join Waitlist
             </Link>
             <Link
               href="/donate"
-              className="px-6 py-3 rounded-lg border border-blue-600 text-blue-600 font-medium shadow hover:bg-blue-50 transition"
+              className="px-6 py-3 flex items-center justify-center rounded-xl border border-blue-600 text-blue-600 font-medium shadow hover:border-blue-400 transition"
             >
+              <CgGift className="mr-2 text-xl" />
               Donate
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Vision / Mission */}
       <section className="max-w-4xl mx-auto mt-20 text-center">
-        <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
-        <p className="text-gray-600">
+        <div className="w-ful flex items-center justify-center">
+          <h2 className="text-2xl font-semibold p-1 px-4 rounded-xl bg-gray-300 w-fit">Our Vision</h2>
+        </div>
+        
+        <p className="text-gray-600 mt-4">
           At PexelXus, we believe in making technology more{" "}
           <span className="font-semibold">accessible</span> and{" "}
           <span className="font-semibold">empowering</span> for
