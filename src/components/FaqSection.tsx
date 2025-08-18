@@ -1,4 +1,4 @@
-import React from 'react'
+import Link from "next/link"
 import {
   Accordion,
   AccordionContent,
@@ -14,35 +14,40 @@ const FaqSection = () => {
       <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center">
         Frequently Asked Question
       </h1>
+       <p className="mt-2 text-gray-600 dark:text-gray-400">
+        Got questions about PexelXus? We’ve got answers.
+      </p>
       <div className="w-full flex flex-col items-center justify-center mt-[4rem]">
         {/* Q - 01 */}
         <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%]'>
           <AccordionItem value="item-1">
-            <AccordionTrigger>Which network do you support?</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-md">What is PexelXus?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
-              PexelXUS supports all major Nigerian network:
-              <p>• MTN</p>
-              <p>• Airtel</p>
-              <p>• Glo </p>
-              <p>No matter your provider!</p>
+               PexelXus is a Nigerian startup where you can buy airtime, data, 
+              gift friends, and share content. We aim to make digital life 
+              easier and more connected.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         {/* Q - 02 */}
         <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%]'>
           <AccordionItem value="item-1">
-            <AccordionTrigger>Can i use it on iPhone and Android devices? 📱</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-md">How do I donate to support PexelXus?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
-              Yes! PexelXUS works on both Android and IOS devices 📱. Download links will be sent via email when launch 🚀.
+               You can support our mission by donating through our{" "}
+              <Link href="/donate" className="text-blue-500 hover:underline">
+                Donate Page
+              </Link>. All donations go towards building a better platform.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         {/* Q - 03 */}
         <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%]'>
           <AccordionItem value="item-1">
-            <AccordionTrigger>How secure are my transactions? 🔐</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-md">Is my payment secure?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
-              Your security is our priority. All transactions are encrypted and proccessed through Paystack, compliant with PCI - DSS standards. We never store your card/bank details.
+              Yes! We use Paystack for payments, ensuring world-class security 
+              and encryption for all your transactions.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -50,16 +55,20 @@ const FaqSection = () => {
         {/* Q - 04 */}
         <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%]'>
           <AccordionItem value="item-1">
-            <AccordionTrigger>Can i connect with my friends?</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-md">Can I join the waitlist?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
-              <p>Yes Apart from purchasing airtime and data, PexelXus allow you to connect with your friends and family easily, and post updates fast!</p>
+              Absolutely! You can{" "}
+              <Link href="/#waitlistform" className="text-blue-500 hover:underline">
+                join our waitlist
+              </Link>{" "}
+              and be the first to know when we launch new features.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         {/* Q - 05 */}
         <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%]'>
           <AccordionItem value="item-1">
-            <AccordionTrigger>Is my airtime/data delivered instantly? ⚡ </AccordionTrigger>
+            <AccordionTrigger className="font-medium text-md">Is my airtime/data delivered instantly? ⚡ </AccordionTrigger>
             <AccordionContent className="text-gray-800">
               Yes! 99% of airtime/data purcharses complete within 10 seconds. If delays occur, contact us on WhatsApp for instant help.
             </AccordionContent>

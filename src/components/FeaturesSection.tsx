@@ -27,7 +27,7 @@ const FeaturesSection = () => {
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
             transition={{duration: 0.6, ease: "easeOut"}}
-          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-gray-200 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
+          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-blue-100 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
             <Image
               src={"/all-network.svg"}
               alt="all-network"
@@ -36,7 +36,7 @@ const FeaturesSection = () => {
               priority
               className="w-[80%]"
             />
-            <h1 className="text-lg text-gray-900 font-semibold mt-[4rem]">
+            <h1 className="text-lg text-center text-gray-900 font-semibold mt-[4rem]">
               Lightning Fast Airtime and Data
             </h1>
             <p className="text-md text-gray-700 mt-2 text-center">
@@ -52,7 +52,7 @@ const FeaturesSection = () => {
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
             transition={{duration: 0.5, ease: "easeOut"}}
-          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-gray-200 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
+          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-blue-100 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
             <Image
               src={"/social.svg"}
               alt="social-illustrate"
@@ -77,7 +77,7 @@ const FeaturesSection = () => {
              margin: "0px 0px -25% 0px" // Only check bottom 25%
             }}
             transition={{duration: 0.6, ease: "easeOut"}}
-          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-gray-200 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
+          className="flex flex-col items-center p-6 py-10 w-[93%] sm:w-[80%] md:w-[30rem] lg:w-[35rem] bg-blue-100 rounded-xl shadow-lg items-center justify-center hover:rounded-b-none hover:border-b-4 hover:border-blue-600 transition-all duration-200 mb-[6rem]">
             <Image
               src={"/security.svg"}
               alt="security-illustrate"

@@ -17,30 +17,45 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
   },
   title: "PexelXus | Nigeria's Social—VTU Super App",
-  description: "Chat, connect, and buy airtime/data instantly—all in one app. Join the waitlist today!",
-  keywords: ["VTU", "Nigeria social app", "buy airtime online", "PexelXus", "Naija fintech"],
+  description:
+    "PexelXus is a Nigerian startup redefining gifting, airtime/data purchases, and social sharing with trust and simplicity.",
+  keywords: [
+    "PexelXus",
+    "Nigeria",
+    "airtime",
+    "data",
+    "gift friends",
+    "startup",
+    "donate",
+  ],
+  authors: [{ name: "PexelXus Team", url: "https://getpexelxus.vercel.app" }],
+  creator: "PexelXus",
+  publisher: "PexelXus",
   openGraph: {
-    title: "PexelXus: Social meets VTU",
-    description: "No more switching between Whatsapp and Opay. Coming soon to Nigeria!",
+    type: "website",
     url: "https://getpexelxus.vercel.app",
-    siteName: "Pexelxus",
+    title: "PexelXus",
+    description:
+      "PexelXus is making gifting and social connections easier across Nigeria.",
+    siteName: "PexelXus",
     images: [
       {
-        url: "https://getpexelxus.com.og-image.png",
+        url: "https://getpexelxus.vercel.app/favicon.png", // Replace with real image
         width: 1200,
         height: 630,
-        alt: "PexelXus App Preview",
+        alt: "PexelXus Preview",
       },
     ],
-    locale: "en_NG",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PexelXus | Nigeria's All—in—One App",
-    description: "Join 5,000+ Nigerians on our waitlist",
-    images: ["https://getpexelxus.com/twitter-card.png"],
+    title: "PexelXus",
+    description:
+      "Join PexelXus to gift friends, buy airtime/data, and connect socially in a new way.",
+    images: ["https://getpexelxus.vercel.app/favicon.png"],
+    creator: "@pexelxus",
   },
+  themeColor: "#0d6efd",
 };
 
 export default function RootLayout({

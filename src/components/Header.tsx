@@ -41,7 +41,7 @@ const Header = () => {
                   className="w-[120%] "
                 />
               </div>
-              <h3 className="text-[1rem] font-semibold ml-2">
+              <h3 className="text-[1.1rem] font-bold ml-2">
                 Pexelxus
               </h3>
             </Link>
