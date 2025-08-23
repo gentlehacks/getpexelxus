@@ -13,7 +13,7 @@ import { FaShieldAlt } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="bg-blue-500 lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[3rem] lg:pt-0">
+    <div className="bg-blue-500 lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[3rem] pb-10 lg:pb-0 lg:pt-0">
       <div className="w-[90%] flex flex-col items-center justify-center lg:pl-[5%]">
         <motion.div 
           initial={{opacity: 0, scale: 0.8}}
@@ -33,14 +33,14 @@ const HeroSection = () => {
           initial={{opacity: 0, y: '50px'}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, type: 'spring', stiffness: 100, delay: 0.5}}
-        className="text-md text-gray-300 sm:text-lg text-center lg:text-left mt-4">
+        className="text-md text-gray-200 sm:text-lg text-center lg:text-left mt-4">
           Save <span className="text-green-400"> ₦50 </span> on every transaction compared to bank apps + enjoy seamless social features designed for <span className="border-b-1 border-green-500"> Nigerians.</span> 
         </motion.p>
 
         {/* DownLoad Buttons */}
         <div className="mt-[3rem] w-full flex items-center justify-center">
           <Link href="/download">
-            <motion.button className="py-3 px-4 rounded-xl bg-blue-700 hover:bg-blue-800 text-gray-100 flex items-center text-[0.9rem] justify-center text-sm transition-all duration-100 cursor-pointer">
+            <motion.button className="py-3 px-4 rounded-xl bg-blue-800 hover:bg-blue-900 text-gray-100 flex items-center text-[0.9rem] justify-center text-sm transition-all duration-100 cursor-pointer">
               <BiDownload className="mr-1 text-xl" />
               Download
             </motion.button>

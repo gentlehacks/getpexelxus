@@ -28,20 +28,23 @@ export const metadata: Metadata = {
     "gift friends",
     "startup",
     "donate",
+    "startup Nigeria", 
+    "gift platform", 
+    "social gifting app"
   ],
-  authors: [{ name: "Salihu Adamu", url: "https://getpexelxus.vercel.app" }],
+  authors: [{ name: "Salihu Adamu", url: "https://pexelxus.com" }],
   creator: "PexelXus",
   publisher: "PexelXus",
   openGraph: {
     type: "website",
-    url: "https://getpexelxus.vercel.app",
+    url: "https://pexelxus.com",
     title: "PexelXus",
     description:
-      "PexelXus is making gifting and social connections easier across Nigeria.",
+      "Gift. Share. Connect. Pexelxus is here for you.",
     siteName: "PexelXus",
     images: [
       {
-        url: "https://getpexelxus.vercel.app/favicon.png", // Replace with real image
+        url: "https://pexelxus.com/favicon.png",
         width: 1200,
         height: 630,
         alt: "PexelXus Preview",
@@ -53,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PexelXus - Buy Airtime, Data & Share",
     description: "Support PexelXus, a Nigerian startup making digital life easier.",
-    images: ["https://getpexelxus.vercel.app/favicon.png"],
+    images: ["https://pexelxus.com/favicon.png"],
     creator: "@pexelxus",
   },
 };
