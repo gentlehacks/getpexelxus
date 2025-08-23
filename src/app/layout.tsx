@@ -64,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="min-h-screen bg-[#8B5CF6]">
+    <html lang="en" className="min-h-screen bg-[rgba(0, 0, 0, 0)]">
       <Head>
         <link rel="icon" href="/favicon.png" />
       </Head>

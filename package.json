@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@getbrevo/brevo": "^3.0.1",
     "@paystack/inline-js": "^2.22.7",
     "@radix-ui/react-accordion": "^1.2.11",
     "@sendinblue/client": "^3.3.1",
@@ -26,6 +27,7 @@
     "react-intersection-observer": "^9.16.0",
     "react-scrollbars-custom": "^4.1.1",
     "resend": "^4.7.0",
+    "sib-api-v3-sdk": "^8.5.0",
     "tailwind-merge": "^3.3.1",
     "twilio": "^5.8.0",
     "zustand": "^5.0.6"

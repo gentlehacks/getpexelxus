@@ -1,21 +1,52 @@
-import SibApiV3Sdk from "@sendinblue/client";
-import { welcomeEmailTemplate } from './welcomeEmailTemplate';
+// import { NumberMap } from "framer-motion";
+// import {brevo} from "./brevo";
 
-export async function sendWelcomeEmail(name: string, email: string) {
+// const CONTACT_TEMPLATE_ID = 123456;
+// const WAITLIST_TEMPLATE_ID = 654321;
 
-  const brevo = new SibApiV3Sdk.TransactionalEmailsApi();
-  brevo.setApiKey(SibApiV3Sdk.TransactionalEmailsApiApiKeys.apiKey, process.env.BREVO_API_KEY!);
+// export async function sendContactEmail(
+//   name: string,
+//   email: string,
+//   message: string
+// ) {
+//   try {
+//     await brevo.sendTransacEmail({
+//       to: [{ email: process.env.CONTACT_EMAIL_TO as string }],
+//       templateId: CONTACT_TEMPLATE_ID,
+//       params: { name, email, message },
+//     });
+//     return { success: true };
+//   } catch (error) {
+//     console.error("Brevo Contact Email Error:", error);
+//     return { success: false, error };
+//   }
+// }
 
-  try {
-      await brevo.sendTransacEmail({
-        sender: { email: process.env.BREVO_SENDER_EMAIL!, name: process.env.BREVO_SENDER_NAME! },
-        to: [{ email }],
-        subject: "🎉 Welcome to the PexelXus!",
-        htmlContent: welcomeEmailTemplate(name),
-      });
-      console.log("✅ Email sent");
-    } catch (error) {
-      console.log("❌ Email sending failed: ", error);
-    }
 
-};
+// export async function sendWaitlistEmail(name: string, email: string) {
+//   try {
+//     await brevo.sendTransacEmail({
+//       to: [{ email }], // send to user directly
+//       templateId: WAITLIST_TEMPLATE_ID,
+//       params: { name },
+//     });
+//     return { success: true };
+//   } catch (error) {
+//     console.error("Brevo Waitlist Email Error:", error);
+//     return { success: false, error };
+//   }
+// }
+
+// export async function sendDonateEmail(name: string, email: string, amount: number) {
+//   try {
+//     await brevo.sendTransacEmail({
+//       to: [{ email }], // send to user directly
+//       templateId: WAITLIST_TEMPLATE_ID,
+//       params: { name, email, amount },
+//     });
+//     return { success: true };
+//   } catch (error) {
+//     console.error("Brevo Donate Email Error:", error);
+//     return { success: false, error };
+//   }
+// }

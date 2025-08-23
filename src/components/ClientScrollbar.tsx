@@ -16,7 +16,7 @@ export default function ClientScrollbar({ children }: { children: React.ReactNod
       }}
       thumbYProps={{
         style: {
-          background: "rgb(207, 207, 207)",
+          background: "rgba(28, 24, 248, 1)",
           borderRadius: "10px",
         },
       }}

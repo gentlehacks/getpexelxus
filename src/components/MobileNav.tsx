@@ -58,7 +58,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
               transition={{duration: 0.2, delay: 0.4}}
             >
               <Link 
-                href="#faq"
+                href="/#faq"
                 onClick={() => setIsOpenMenu(false)}
                 className="w-full py-4 rounded-md flex items-center justify-center hover:bg-gray-100 transition-all duration-200"
               >FAQ</Link>

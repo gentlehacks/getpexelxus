@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
-import { SendDonatedEmail } from "@/utils/SendDonatedEmail"
 import { supabase } from "@/lib/supabase-client"
+// import { sendDonateEmail } from "@/utils/sendEmail"
 
 export async function POST(req: Request) {
   try {
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
       // ✅ Save record in Supabase
       const { error } = await supabase.from("donations").insert([
         {
-          name: metadata?.name || customer.first_name || "Anonymous",
+          name: metadata?.name || "Anonymous",
           email: customer.email,
           amount: amount / 100, // Paystack amount is in kobo
           reference,
@@ -36,12 +36,12 @@ export async function POST(req: Request) {
         console.error("❌ Supabase insert failed:", error)
       }
 
-      // ✅ Send thank-you email
-      await SendDonatedEmail({
-        name: metadata?.name || customer.first_name || "Donor",
-        email: customer.email,
-        amount: amount / 100,
-      })
+      // // ✅ Send thank-you email
+      // await sendDonateEmail({
+      //   name: metadata?.name,
+      //   email: customer.email,
+      //   amount: amount / 100,
+      // })
 
       return NextResponse.json({ status: "success", data: verifyData.data })
     }

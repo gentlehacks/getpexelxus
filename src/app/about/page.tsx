@@ -41,8 +41,8 @@ const About = () => {
         <motion.div 
           whileHover={{bottom: 3}}
           transition={{type: 'spring', stiffness: 300}}
-        className="p-4 py-8 bg-[#0F172A] text-gray-100 rounded-2xl">
-          <h2 className="text-2xl font-semibold bg-gray-800 rounded-xl p-1 px-2 w-fit">Meet the Founder</h2>
+        className="p-4 py-8 bg-blue-500 text-gray-100 rounded-2xl">
+          <h2 className="text-2xl font-semibold bg-blue-400 rounded-xl p-1 px-2 w-fit">Meet the Founder</h2>
           <p className="text-gray-100 mt-8">
             Hi, I’m <span className="font-bold text-gray-100">Salihu Adamu</span>, the founder
             of PexelXus. I started this journey to make digital transactions
@@ -53,10 +53,10 @@ const About = () => {
           {/* Social Links */}
           <div className="flex items-center gap-[1rem] mt-5">
             <Link href="https://www.github.com/gentlehacks">
-              <p className="text-blue-500 hover:text-blue-600">Github</p>
+              <p className="text-blue-800 hover:text-blue-900">Github</p>
             </Link>
             <Link href="https://www.linkedin.com/in/salihu-adamu-3b9b97290">
-              <p className="text-blue-400 hover:text-blue-600">LinkeIn</p>
+              <p className="text-blue-800 hover:text-blue-900">LinkeIn</p>
             </Link>
           </div>
 
@@ -64,13 +64,13 @@ const About = () => {
           <div className="flex gap-4 mt-12">
             <Link
               href="/#waitlistform"
-              className="px-6 py-3 flex items-center justify-center rounded-xl bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
+              className="px-6 py-3 flex items-center justify-center rounded-xl bg-gray-900 text-white font-medium shadow hover:bg-gray-800 transition"
             >
               Join Waitlist
             </Link>
             <Link
               href="/donate"
-              className="px-6 py-3 flex items-center justify-center rounded-xl border border-blue-600 text-blue-600 font-medium shadow hover:border-blue-400 transition"
+              className="px-6 py-3 flex items-center justify-center rounded-xl border-2 border-gray-900 text-gray-900 font-medium shadow hover:border-gray-800 transition"
             >
               <CgGift className="mr-2 text-xl" />
               Donate
