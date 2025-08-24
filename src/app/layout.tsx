@@ -70,6 +70,30 @@ export default function RootLayout({
     <html lang="en" className="min-h-screen bg-[rgba(0, 0, 0, 0)]">
       <Head>
         <link rel="icon" href="/favicon.png" />
+        <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Pexelxus",
+          "url": "https://pexelxus.com",
+          "logo": "https://pexelxus.com/favicon.png",
+          "sameAs": [
+            "https://twitter.com/pexelxus",
+            "https://linkedin.com/company/pexelxus",
+            "https://instagram.com/pexelxus"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "support@pexelxus.com",
+            "telephone": "+2348000000000",
+            "areaServed": "NG",
+            "availableLanguage": ["English"]
+          }
+        }
+        `}
+        </script>
       </Head>
       <body
         className={`${poppins.variable} antialiased`}
