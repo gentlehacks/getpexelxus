@@ -75,7 +75,7 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased`}
       > 
         <PlausibleProvider
-          domain="getpexelxus.vercel.app"
+          domain="pexelxus.com"
           trackOutboundLinks={true}
           enabled={process.env.NODE_ENV === 'production'}
         >
