@@ -33,7 +33,7 @@ const Testimonials = () => {
       image: "/lanre.jpg",
       name: "Lanre Tobi",
       address: "Kano",
-      comment: "I just got free 200MB because my guy gifted me airtime 😂🔥",
+      comment: "I just got free 2GB because my guy gifted me airtime 😂🔥",
       category: "Nurse"
     },
     {
@@ -41,7 +41,7 @@ const Testimonials = () => {
       image: "/desola.jpg",
       name: "Densola",
       address: "Lagos",
-      comment: "Paying my NEPA bill never felt this easy.",
+      comment: "Finally a nigerian app that have great UX right.",
       category: "Software Developer"
     },
   ];

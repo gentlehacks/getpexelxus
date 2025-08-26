@@ -10,10 +10,42 @@ html {
   scroll-padding-top: 80px;
 }
 
-.hero-gradient {
-  background-attachment: scroll; /* fixes iOS bug */
-}
+/* globals.css (or styles.css) */
+/* hero gradient that mirrors: bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-black */
 
-.footer-gradient {
-  background-attachment: scroll; /* fixes iOS bug */
+.bg-gradient-hero {
+  /* solid fallback color (safe default) */
+  background-color: #0f172a;
+
+  /* very old WebKit (Safari 4-5, Chrome 1-9) */
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #0f172a),
+    color-stop(0.5, #1e293b),
+    color-stop(1, #000000)
+  );
+
+  /* older WebKit (Safari 5.1+, Chrome 10-25) */
+  background-image: -webkit-linear-gradient(top, #0f172a 0%, #1e293b 50%, #000000 100%);
+
+  /* Firefox (older) */
+  background-image: -moz-linear-gradient(top, #0f172a 0%, #1e293b 50%, #000000 100%);
+
+  /* Opera (older) */
+  background-image: -o-linear-gradient(top, #0f172a 0%, #1e293b 50%, #000000 100%);
+
+  /* Standard (modern browsers) */
+  background-image: linear-gradient(to bottom, #0f172a 0%, #1e293b 50%, #000000 100%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll; /* important: avoids some iOS bugs with fixed/viewport */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0); /* promote to own layer (fix some rendering glitches) */
+
+  /* layout helpers */
+  min-height: 100vh;     /* full viewport height */
+  width: 100%;
 }

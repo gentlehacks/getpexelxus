@@ -24,7 +24,6 @@ const FeaturesSection = () => {
             <motion.div key={i}  
               initial={{opacity: 0, x: '30px'}}
               whileInView={{opacity: 1, x: '0px'}}
-              exit={{opacity: 0, x: '30px'}}
               transition={{duration: 0.5, ease: 'linear'}}
               viewport={{ 
               margin: "0px 0px -12% 0px" 
