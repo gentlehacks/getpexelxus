@@ -5,50 +5,51 @@ import Link from "next/link";
 import { HiBadgeCheck } from "react-icons/hi";
 import { FcSms } from "react-icons/fc";
 import { FcChargeBattery } from "react-icons/fc";
-import { BiDownload } from "react-icons/bi";
+// import { BiDownload } from "react-icons/bi";
 import { FaShieldAlt } from "react-icons/fa";
-
-
-
 
 const HeroSection = () => {
   return (
-    <div className="bg-blue-500 lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[3rem] pb-10 lg:pb-0 lg:pt-0">
+    <div className="bg-gradient-to-b from-gray-900 via-gray-800 lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[4rem] pb-15 lg:pb-0 lg:pt-0">
       <div className="w-[90%] flex flex-col items-center justify-center lg:pl-[5%]">
         <motion.div 
           initial={{opacity: 0, scale: 0.8}}
           animate={{opacity: 1, scale: 1}}
           transition={{duration: 0.4, delay: 0}}
         className="flex items-center justify-center px-2 py-1 text-[13px] text-[10px] sm:text-[10px] md:text-xs lg:text-xs rounded-full bg-[#b3dfd2] border-1 border-green-400 text-gray-800 mb-2">
-          <HiBadgeCheck className="text-blue-500 text-[1.1rem] mr-1" />
-          Trusted by 5,000+ users
+          <HiBadgeCheck className="text-green-600 text-[1.1rem] font-medium mr-1" />
+          Gift Airtime • Pay Bills • Flex with Friends.
         </motion.div>
         <h1 className="mt-3 text-gray-100 text-[1.8rem] sm:text-[2rem] md:text-[2.8] lg:text-[2.2rem] font-semibold  text-center lg:text-left">
-          The Smart Way to Buy Airtime and Stay 
-          <span className="text-green-400 ml-3">
-            Connected
-          </span> 
+          The Smart Nigeria&apos;s Everyday 
+          <span className="text-green-400"> Super App </span>
         </h1>
         <motion.p 
           initial={{opacity: 0, y: '50px'}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, type: 'spring', stiffness: 100, delay: 0.5}}
         className="text-md text-gray-200 sm:text-lg text-center lg:text-left mt-4">
-          Save <span className="text-green-400"> ₦50 </span> on every transaction compared to bank apps + enjoy seamless social features designed for <span className="border-b-1 border-green-500"> Nigerians.</span> 
+          The first social app that makes airtime, data, and payments fun, rewarding, and 
+          <span className="border-b-1 border-green-500"> stress-free.</span>
         </motion.p>
 
-        {/* DownLoad Buttons */}
+        {/* CTA */}
         <div className="mt-[3rem] w-full flex items-center justify-center">
           <Link href="/download">
-            <motion.button className="py-3 px-4 rounded-xl bg-blue-800 hover:bg-blue-900 text-gray-100 flex items-center text-[0.9rem] justify-center text-sm transition-all duration-100 cursor-pointer">
-              <BiDownload className="mr-1 text-xl" />
-              Download
+            <motion.button 
+              whileHover={{y: "4px"}}
+              whileTap={{y: "4px"}}
+              transition={{duration: 0.2}}
+            className="py-3 px-6 rounded-full bg-blue-700 hover:bg-blue-800 hover:shadow-xl text-gray-100 flex items-center text-[0.9rem] shadow-lg justify-center text-sm transition-all duration-100 cursor-pointer">
+              {/* <BiDownload className="mr-1 text-xl" /> */}
+              Join the Waitlist
             </motion.button>
           </Link>
         </div>
         <p className="mt-[5rem] text-gray-100 flex items-center">
           <FaShieldAlt className="text-xl mr-2" /> 
-          Secured by Paystack</p>
+          Secured by Paystack
+        </p>
       </div>
       <div className="w-full flex flex-col items-center justify-center lg:mt-[-5rem]">
         {/* Mockups */}

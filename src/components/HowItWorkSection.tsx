@@ -1,8 +1,5 @@
 "use client"
 import {motion} from "framer-motion"
-import { LuUserRound } from "react-icons/lu";
-import { LuKeyRound } from "react-icons/lu";
-import { MdOutlineCelebration } from "react-icons/md";
 
 const StepsVariants = {
   initial: {opacity: 0, y: "100px"},
@@ -14,7 +11,7 @@ const HowItWorkSection = () => {
     <div 
       id="how-it-works"
     className="bg-bluw-500 w-full flex items-center justify-center flex-col mt-[10rem] overflow-hidden">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+      <h1 className="text-2xl md:text-2xl lg:text-3xl font-semibold">
         How to get started
       </h1>
       <div className="w-full flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center lg:gap-2 mt-[5rem]">
@@ -30,13 +27,13 @@ const HowItWorkSection = () => {
         > 
           <div className="flex flex-col items-center justify-center">
             <div className="w-[3.5rem] h-[3.5rem] rounded-full bg-blue-500 flex items-center justify-center"> 
-              <LuUserRound className="text-white text-xl" />
+              <h2 className="text-white text-2xl font-bold">1</h2>
             </div>
             <h1 className="text-lg font-semibold mt-4">
-              Join Waitlist
+              Create Account
             </h1>
             <p className="text-md text-center text-gray-800 mt-2">
-              Join the Waitlist Now for Early access!
+              Sign up in minutes with your phone number.
             </p>
           </div>
           
@@ -56,13 +53,13 @@ const HowItWorkSection = () => {
         > 
           <div className="flex flex-col items-center justify-center">
             <div className="w-[3.5rem] h-[3.5rem] rounded-full bg-blue-500 flex items-center justify-center"> 
-               <LuKeyRound className="text-white text-xl" />
+               <h2 className="text-white text-2xl font-bold">2</h2>
             </div>
             <h1 className="text-lg font-semibold mt-4">
-              Get VIP Access
+              Fund Wallet
             </h1>
             <p className="text-md text-center text-gray-800 mt-2">
-              Received app download link via your Email address
+              Add money securely with Paystack virtual accounts.
             </p>
           </div>
           
@@ -82,13 +79,13 @@ const HowItWorkSection = () => {
         > 
           <div className="flex flex-col items-center justify-center">
             <div className="w-[3.5rem] h-[3.5rem] rounded-full bg-blue-500 flex items-center justify-center"> 
-               <MdOutlineCelebration className="text-white text-xl" />
+               <h2 className="text-white text-2xl font-bold">3</h2>
             </div>
             <h1 className="text-lg font-semibold mt-4">
-              Recharge & Connect
+              Push transactions
             </h1>
             <p className="text-md text-center text-gray-800 mt-2">
-              Buy airtime or data in one tap and connect with friends easily
+              Buy airtime/data, gift friends, and connect.
             </p>
           </div>
         </motion.div>

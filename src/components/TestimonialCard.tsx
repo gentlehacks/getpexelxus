@@ -29,9 +29,9 @@ const TestimonialCard = ({
         whileInView={{opacity: 1, scale: 1}}
         exit={{opacity: 0, scale: 0.8}}
         transition={{duration: 0.5}}
-        className="w-[20rem] sm:w-[20rem] md:w-[22rem] lg:w-[25rem] flex flex-col bg-white border-1 border-gray-200 p-4 rounded-lg shadow-md mb-[2.5rem] sm:mb-0"
+        className="w-[90%] sm:w-[80%] md:w-[30rem] lg:w-[40rem] flex flex-col bg-white border-1 border-gray-200 p-4 rounded-lg shadow-md"
       >
-        <div className="flex items-center gap-[3px]">
+        <div className=" flex items-center gap-[3px]">
           {[1,2,3,4,5].map((_, id) => (
             <FaStar 
               key={id}
@@ -56,7 +56,7 @@ const TestimonialCard = ({
               />
             </div>
             <div className="ml-3 flex items-center">
-              <p className="text-[0.9rem] font-medium text-gray-900">
+              <p className="text-[0.9rem] text-center font-medium text-gray-900">
                 @<span className="">{name}</span> -
                 <span className="ml-2">{address}</span>
               </p>

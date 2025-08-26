@@ -1,7 +1,7 @@
 "use client"
 import FeaturesSection from '@/components/FeaturesSection'
 import HeroSection from '@/components/HeroSection'
-import ProblemSection from '@/components/ProblemSection'
+import SolutionSection from '@/components/SolutionSection'
 import HowItWorkSection from '@/components/HowItWorkSection'
 import ProofAndCtaBtn from '@/components/ProofAndCtaBtn'
 import Testimonials from '@/components/Testimonials'
@@ -18,14 +18,14 @@ const Home = () => {
       {/* Hero section */}
       <HeroSection />
 
-      {/* ProblemSection */}
-      <ProblemSection />
-
       {/* Features Section */}
       <FeaturesSection />
 
       {/* How it Works Section */}
       <HowItWorkSection />
+
+      {/* ProblemSection */}
+      <SolutionSection />
 
       <ProofAndCtaBtn />
 

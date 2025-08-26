@@ -12,10 +12,10 @@ const FaqSection = () => {
       id="faq"
     className="w-full flex flex-col items-center justify-center mt-[9rem]">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center">
-        Frequently Asked Question
+        Frequently Asked <span className="border-b-1 border-blue-600"> Question </span>
       </h1>
        <p className="mt-2 text-gray-700 text-gray-700 px-6 text-center">
-        Got questions about PexelXus? We’ve got answers.
+        Got questions about PexelXus? We&apos;ve got answers.
       </p>
       <div className="w-full flex flex-col items-center justify-center mt-[4rem]">
         {/* Q - 01 */}
@@ -66,14 +66,7 @@ const FaqSection = () => {
           </AccordionItem>
         </Accordion>
         {/* Q - 05 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%]'>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md">Is my airtime/data delivered instantly? ⚡ </AccordionTrigger>
-            <AccordionContent className="text-gray-800">
-              Yes! 99% of airtime/data purcharses complete within 10 seconds. If delays occur, contact us on WhatsApp for instant help.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+        
       </div>
     </div>
   )

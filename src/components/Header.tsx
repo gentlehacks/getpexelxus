@@ -26,7 +26,7 @@ const Header = () => {
       initial={{y: "-70px"}}
       animate={{y: 0}}
       transition={{duration: 0.7, ease: "easeInOut"}}
-    className="sticky top-0 z-50 w-full flex items-center justify-center py-3 px-3 sm:px-[2rem] bg-[#b3dfd2] shadow-sm">
+    className="sticky top-0 z-50 w-full flex items-center justify-center py-3 px-3 sm:px-[2rem] bg-[#b3dfd2] bg-blue-200 shadow-sm">
         <ul className="w-full flex items-center justify-between">
           <div className="flex items-center">
             {/* Pexelxus - Logo */}
@@ -91,8 +91,8 @@ const Header = () => {
               initial={{scale: 1}}
               whileTap={{scale: [1, 1.1, 1]}}
               onClick={() => setIsOpenMenu(!isOpenMenu)}
-            className="block md:hidden ml-5 bg-gray-100 hover:bg-gray-200 transition-all duration-200 rounded-lg p-1 mr-4">
-              <BiMenu className="text-[1.7rem]" />
+            className="block md:hidden ml-5 bg-blue-400 hover:bg-blue-300 transition-all duration-200 rounded-lg p-1 mr-4">
+              <BiMenu className="text-[1.9rem]" />
             </motion.div>
             <div className="hidden md:flex">
               <Link href="/donate">

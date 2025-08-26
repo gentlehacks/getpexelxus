@@ -1,10 +1,7 @@
 "use client"
-import {motion, useAnimationControls} from "framer-motion";
 import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
-
-  const controls = useAnimationControls()
 
   const testimonials = [
     {
@@ -12,7 +9,7 @@ const Testimonials = () => {
       image: "/aliyu-suleiman.jpg",
       name: "Aliyu Suleiman",
       address: "Niger state",
-      comment: "Before pexelXus, I wasted 30 mins daily switching between WhatsApp and Opay. Now i buy airtime and connect to others. Game Changer!",
+      comment: "I sent airtime to my babe, she smiled like I bought her ice cream 😂",
       category: "Student"
     },
     {
@@ -28,7 +25,7 @@ const Testimonials = () => {
       image: "/mustapha.jpg",
       name: "Mustapha",
       address: "Niger state",
-      comment: "I use MTN and Glo. PexelXus works for both, and i don't need seperate apps anymore. Thank God!",
+      comment: "The cashback is small-small, but e dey show!",
       category: "Student"
     },
     {
@@ -36,7 +33,7 @@ const Testimonials = () => {
       image: "/lanre.jpg",
       name: "Lanre Tobi",
       address: "Kano",
-      comment: "Between work and kids, I forgot to recharge. Now i buy airtime while checking family updates. Lifesaver!",
+      comment: "I just got free 200MB because my guy gifted me airtime 😂🔥",
       category: "Nurse"
     },
     {
@@ -44,27 +41,19 @@ const Testimonials = () => {
       image: "/desola.jpg",
       name: "Densola",
       address: "Lagos",
-      comment: "Finally, a Nigerian app that get UX right, Smooth UI, instant transactions - no 'pending' wahala.",
+      comment: "Paying my NEPA bill never felt this easy.",
       category: "Software Developer"
     },
   ];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-[8rem] overflow-hidden">
+    <div className="w-full flex flex-col items-center justify-center mt-[10rem]">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold font-semibold">
-        Social Proof
+        What Early Users <span className="border-b-2 border-blue-600"> Say </span>
       </h1>
 
-      {/* Social Proof */}
-      <motion.div className="flex items-center justify-center space-x-[3rem] mt-[5rem]"
-        initial={{x: "90%"}}
-        animate={{x: ["90%", "-90%"]}}
-        transition={{duration: 70, repeat: Infinity, repeatType: "loop", ease: "linear"}}
-        onMouseEnter={() => controls.stop()}
-        onTapStart={() => controls.stop()}
-        onMouseLeave={() => controls.start({
-          transition: {repeat: Infinity}
-        })}
+      {/* Social Proofs */}
+      <div className="w-full flex flex-col items-center justify-center gap-12 md:gap-15  mt-[4rem] "
       >
         {/* Cards */}
           {testimonials.map((t) => (
@@ -78,7 +67,7 @@ const Testimonials = () => {
               category={t.category}
             />
           ))}
-        </motion.div>
+        </div>
 
 
     </div>

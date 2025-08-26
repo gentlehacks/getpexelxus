@@ -25,7 +25,7 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
           exit={{opacity: 0, y: '-100px'}}
           transition={{duration: 0.2,}}
           onClick={(e) => e.stopPropagation()}
-        className="absolute top-0 left-0 pt-10 pb-20 w-[100%] h-screen flex sm:block md:hidden lg:hiddens flex-col justify-between space-y-1 bg-white rounded-b-xl border-b-1 border-gray-100 shadow-lg">
+        className="absolute top-0 left-0 pt-10 pb-30 w-[100%] h-screen flex sm:block md:hidden lg:hiddens flex-col justify-between space-y-1 bg-white rounded-b-xl border-b-1 border-gray-100 shadow-lg">
           <div className="w-full flex flex-col iitems-center justify-center gap-[1rem]">
             <motion.div
               initial={{opacity: 0}}
@@ -90,18 +90,18 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
             <FaXmark className="text-3xl" />
           </motion.div>
 
-          <div className="w-full flex flex-col items-center justify-center">
+          <div className="w-full flex flex-col items-center justify-center px-4">
             <motion.div
               initial={{opacity: 0}}
               animate={{opacity: 1}}
               exit={{opacity: 0}}
               transition={{duration: 0.2, delay: 0.6}}
-              className="w-[95%]"
+              className="w-[100%]"
             >
               <Link 
                 href="/donate"
                 onClick={() => setIsOpenMenu(false)}
-                className="w-[95%] px-6 py-4 bg-[#0F172A] text-gray-100 rounded-full flex items-center justify-center hover:bg-gray-800 transition-all duration-200"
+                className="w-[100%] px-6 py-4 bg-[#0F172A] text-gray-100 rounded-full flex items-center justify-center hover:bg-gray-800 transition-all duration-200"
               >
                 <CgGift className="mr-2 text-xl" />
                 Donate
@@ -112,12 +112,12 @@ const MobileNav = ({setIsOpenMenu}: MolbileNavProps) => {
               animate={{opacity: 1}}
               exit={{opacity: 0}}
               transition={{duration: 0.2, delay: 0.6}}
-              className="w-[95%]"
+              className="w-[100%]"
             >
               <Link 
                 href="/#waitlistform"
                 onClick={() => setIsOpenMenu(false)}
-                className="w-[95%] px-6 py-4 border-2 border-[#0F172A] font-medium text-gray-900 rounded-full flex items-center justify-center hover:border-gray-800 transition-all duration-200 mt-3"
+                className="w-[100%] px-6 py-4 border-2 border-[#0F172A] font-medium text-gray-900 rounded-full flex items-center justify-center hover:border-gray-800 transition-all duration-200 mt-3"
               >
                 Join Waitlist
               </Link>

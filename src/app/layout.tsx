@@ -4,7 +4,6 @@ import PlausibleProvider from "next-plausible";
 import "./globals.css";
 import { Poppins } from 'next/font/google';
 import Header from "@/components/Header";
-import ClientScrollbar from "@/components/ClientScrollbar";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -30,7 +29,13 @@ export const metadata: Metadata = {
     "donate",
     "startup Nigeria", 
     "gift platform", 
-    "social gifting app"
+    "social gifting app",
+    "Nigeria super app",
+    "airtime app",
+    "buy data Nigeria",
+    "VTU Nigeria",
+    "wallet app",
+    "fintech Nigeria",
   ],
   authors: [{ name: "Salihu Adamu", url: "https://pexelxus.com" }],
   creator: "PexelXus",
@@ -38,9 +43,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://pexelxus.com",
-    title: "PexelXus",
+    title: "Pexelxus - Nigeria’s Super App for Airtime, Data & More",
     description:
-      "Gift. Share. Connect. Pexelxus is here for you.",
+      "The trusted Nigerian super app for airtime, data, and seamless wallet payments. Built for Nigerians, by Nigerians.",
     siteName: "PexelXus",
     images: [
       {
@@ -54,11 +59,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PexelXus - Buy Airtime, Data & Share",
-    description: "Support PexelXus, a Nigerian startup making digital life easier.",
+    title: "Pexelxus - Nigeria's Super App for Airtime, Data & More",
+    description: "Fund your wallet, buy airtime & data, and gift services easily. The Nigerian super app",
     images: ["https://pexelxus.com/favicon.png"],
     creator: "@pexelxus",
   },
+   manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -87,7 +93,7 @@ export default function RootLayout({
             "@type": "ContactPoint",
             "contactType": "customer support",
             "email": "support@pexelxus.com",
-            "telephone": "+2348000000000",
+            "telephone": "+2349131165467",
             "areaServed": "NG",
             "availableLanguage": ["English"]
           }
@@ -103,10 +109,8 @@ export default function RootLayout({
           trackOutboundLinks={true}
           enabled={process.env.NODE_ENV === 'production'}
         >
-          <ClientScrollbar>
-            <Header />
-            {children}
-          </ClientScrollbar>
+          <Header />
+          {children}
         </PlausibleProvider>
       </body>
     </html>

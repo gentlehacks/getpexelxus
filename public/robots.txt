@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pexelxus.com
+
+# Sitemaps
+Sitemap: https://pexelxus.com/sitemap.xml
