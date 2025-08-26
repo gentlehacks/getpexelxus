@@ -20,7 +20,7 @@ const ProblemSection = () => {
           <div className="bg-blue-200 rounded-2xl p-7 flex flex-col justify-center shadow-md text-gray-900">
             <p className="text-xl text-blue-700 font-semibold mb-4">💡 Imagine this:</p>
             <p className="text-gray-700">
-              You buy <span className="border-b-1 border-green-600 text-blue-600"> ₦100 </span> airtime • It`&apos;s instant • You also earn <span className="border-b-1 border-green-600 text-blue-600"> ₦2 cashback </span> without even noticing •
+              You buy <span className="border-b-1 border-green-600 text-blue-600"> ₦100 </span> airtime • It&apos;s instant • You also earn <span className="border-b-1 border-green-600 text-blue-600"> ₦2 cashback </span> without even noticing •
               That&apos;s the PexelXus difference.
             </p>
           </div>

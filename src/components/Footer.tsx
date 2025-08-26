@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-t from-gray-900 via-gray-800 w-full flex flex-col items-center justify-center p-4 px-6 pt-15  text-gray-100 mt-[12rem]">
+    <div className="bg-gradient-to-t from-gray-900 via-gray-800 w-full flex flex-col items-center justify-center p-4 px-6 pt-15  text-gray-100 mt-[12rem] footer-gradient">
       <div className="flex items-center mt-3">
         {/* Pexelxus - Logo */}
           <div className="w-[2.2rem] h-[2.2rem] flex items-center justify-center rounded-full object-cover overflow-hidden border-1 border-gray-400">

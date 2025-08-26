@@ -10,6 +10,10 @@ html {
   scroll-padding-top: 80px;
 }
 
+.hero-gradient {
+  background-attachment: scroll; /* fixes iOS bug */
+}
 
-
-
+.footer-gradient {
+  background-attachment: scroll; /* fixes iOS bug */
+}
