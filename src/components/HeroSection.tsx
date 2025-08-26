@@ -10,7 +10,7 @@ import { FaShieldAlt } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-900 via-gray-800 min-h-screen lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[4rem] pb-15 lg:pb-0 lg:pt-0 hero-gradient">
+    <div className="bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-black min-h-screen lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[4rem] pb-15 lg:pb-0 lg:pt-0 hero-gradient">
       <div className="w-[90%] flex flex-col items-center justify-center lg:pl-[5%]">
         <motion.div 
           initial={{opacity: 0, scale: 0.8}}

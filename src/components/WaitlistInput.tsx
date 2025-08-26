@@ -48,7 +48,7 @@ const WaitlistInput = ({
         <motion.label 
           htmlFor={id}
         className={`absolute flex items-center px-[3px] justify-center left-11 text-md text-left bg-white w-fit-content pointer-events-none
-          ${shouldFloat ? 'text-blue-600' : 'text-gray-900'}  
+          ${shouldFloat ? 'text-blue-600' : 'text-gray-600'}  
         `}
           initial={{y: 0, scale: 1}}
           animate={{
@@ -61,7 +61,7 @@ const WaitlistInput = ({
         >
           {label}
         </motion.label>
-        <div className="absolute left-3 pr-2 border-r border-gray-400">
+        <div className="absolute left-3 pr-2 border-r border-gray-400 text-gray-800">
           
           {icon === "user" ? (
             <FaUser />

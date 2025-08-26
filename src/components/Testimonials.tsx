@@ -10,7 +10,7 @@ const Testimonials = () => {
       name: "Aliyu Suleiman",
       address: "Niger state",
       comment: "I sent airtime to my babe, she smiled like I bought her ice cream 😂",
-      category: "Student"
+      category: "Graphic designer"
     },
     {
       id: 2,
