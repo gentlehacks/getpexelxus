@@ -104,8 +104,8 @@ export default function DonatePage() {
         <button
           disabled={submitting}
           type="submit"
-          className={`w-full  text-white font-medium px-6 py-4 rounded-lg shadow hover:bg-blue-600 transition
-            ${submitting ? 'bg-blue-400 hover:bg-blue-400 cursor-loader hover:bg-blue-700' : 'bg-blue-600'}
+          className={`w-full  text-white font-semibold px-6 py-4 rounded-xl shadow hover:bg-blue-600 transition
+            ${submitting ? 'bg-blue-400 hover:bg-blue-400 cursor-loader hover:bg-blue-700' : 'bg-blue-600 cursor-pointer'}
          `}
         >{submitting ? 'Proccessing...' : 'Donate'}</button>
 

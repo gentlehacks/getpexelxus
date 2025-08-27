@@ -28,8 +28,9 @@ const About = () => {
           <span className="font-medium ">
             share content
           </span>
-          . We are building a platform that&apos;s simple, reliable, and made for
-          Nigerians.
+          . We are building a platform that&apos;s simple, reliable, and 
+          <span className="border-b-1 border-blue-500"> made for
+          Nigerians.</span> 
         </p>
       </section>
 
@@ -51,11 +52,11 @@ const About = () => {
           <div className="flex items-center gap-[1rem] ml-2 mt-10 w-full">
             <Link href="https://www.github.com/gentlehacks">
             <FaGithub className="text-lg" />
-              <p className="text-blue-700 hover:text-blue-600 mt-1">Github</p>
+              <p className="text-blue-600 hover:text-blue-500 mt-1">Github</p>
             </Link>
             <Link href="https://www.linkedin.com/in/salihu-adamu-3b9b97290">
               <FaLinkedin className="text-lg" />
-              <p className="text-blue-700 hover:text-blue-600 mt-1">LinkeIn</p>
+              <p className="text-blue-600 hover:text-blue-500 mt-1">LinkeIn</p>
             </Link>
           </div>
 
@@ -63,14 +64,14 @@ const About = () => {
           <div className="flex gap-4 mt-12">
             <Link
               href="/#waitlistform"
-              className="px-6 py-3 text-center flex items-center justify-center rounded-xl bg-gray-900 border-2 border-gray-800 text-white font-semibold shadow-md hover:bg-gray-800 transition-all duration-100"
+              className="px-6 py-3 text-center flex items-center justify-center rounded-xl bg-gray-900 border-2 border-gray-700 text-white font-semibold shadow-md hover:bg-gray-800 transition-all duration-100"
             >
               Join Waitlist
             </Link>
             <Link
               href="/donate"
               title="Support PexelXus!"
-              className="relative px-6 py-3 text-center flex items-center justify-center rounded-xl bg-gray-900 border-2 border-gray-800 font-semibold shadow-md hover:bg-gray-800 transition-all duration-100"
+              className="relative px-6 py-3 text-center flex items-center justify-center rounded-xl bg-gray-900 border-2 border-gray-700 font-semibold shadow-md hover:bg-gray-800 transition-all duration-100"
             >
               <CgGift className="mr-2 text-xl" />
               Donate
@@ -103,8 +104,11 @@ const About = () => {
           At PexelXus, we believe in making technology more{" "}
           <span className="font-medium">accessible</span> and{" "}
           <span className="font-medium">empowering</span> for
-          everyone. Our mission is to connect people through simple, secure, and
-          fun digital experiences.
+          everyone. Our mission is to
+          <span className="border-b-1 border-blue-500 font-medium"> connect people </span> 
+          through simple, secure, and
+          fun 
+          <span className="border-b-1 border-blue-500 font-medium"> digital experiences. </span>
         </p>
       </section>
     </main>

@@ -27,7 +27,7 @@ const FaqSection = () => {
                PexelXus is a Nigerian startup where you can buy airtime, data, 
               gift friends, and share content. We aim to make digital life 
               easier and more connected. Want to learn more? Go to 
-              <Link href="/about" className="border-b-1 border-blue-500"> About page</Link>
+              <Link href="/about" className="text-blue-600"> About page</Link>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

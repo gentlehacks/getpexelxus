@@ -16,7 +16,7 @@ export default function ContactPage() {
     setStatus("");
     setSubmitting(true)
     if (!name || !email || !message) {
-      setStatus("All fields required!");
+      setStatus("Please fill out all field!");
       setSubmitting(false)
       return
     }
@@ -48,19 +48,26 @@ export default function ContactPage() {
     }
   }
 
+  setTimeout(() => setStatus(""), 10000)
+
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 px-6 py-16 md:px-20">
+    <main className="min-h-screen bg-gray-50 text-gray-900 px-4 pt-16 pb-25 md:px-20">
       {/* Header */}
       <section className="max-w-3xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+        <div className="flex items-center justify-center mb-4 mt-8">
+          <h1 className="text-2xl font-bold px-4 py-2 bg-gray-200 rounded-2xl w-fit">
+            Contact Us
+          </h1>
+        </div>
+        
         <p className="text-lg text-gray-600">
-          Have questions or want to partner with us? We’d love to hear from you.
+          Have questions or want to <span className="border-b-1 border-blue-500 font-medium"> partner with us? </span> We&apos;d love to hear from you.
           Fill out the form below or connect with us on social media.
         </p>
       </section>
 
       {/* Contact Form */}
-      <section className="w-[100%] max-w-3xl mx-auto mt-12 bg-white shadow-lg rounded-2xl py-8 px-5">
+      <section className="w-[100%] max-w-3xl mx-auto mt-15 bg-white shadow-lg rounded-2xl py-8 px-5">
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name */}
           <div>
