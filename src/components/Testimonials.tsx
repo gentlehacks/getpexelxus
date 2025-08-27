@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       id: 1,
       image: "/aliyu-suleiman.jpg",
-      name: "Aliyu Suleiman",
+      name: "Aliyu",
       address: "Niger state",
       comment: "I sent airtime to my babe, she smiled like I bought her ice cream 😂",
       category: "Graphic designer"
