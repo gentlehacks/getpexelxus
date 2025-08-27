@@ -52,15 +52,20 @@ export default function DonatePage() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-900 px-2 py-16 md:px-20">
       <section className="max-w-3xl mx-auto text-center">
-        <h1 className="text-gray-900 text-4xl md:text-5xl font-bold mb-4">Support Pexelxus</h1>
-        <p className="text-lg text-gray-600 mt-[1.5rem]">
-          Help us build Nigeria’s trusted platform for airtime, data, gifting,
+        <div className="mb-10 flex items-center justify-center">
+          <h1 className="text-gray-900 text-xl font-bold bg-gray-200 px-4 py-2 rounded-2xl w-fit">Support Pexelxus</h1>
+        </div>
+        
+        <p className="text-lg text-gray-700 mt-[1.5rem]">
+          Help us build <span className="border-b-1 border-blue-500 font-medium"> Nigeria’s trusted platform </span> for airtime, data, gifting,
           and content sharing. Every donation makes a difference 🙏.
         </p>
       </section>
 
       <form onSubmit={handleDonate} className="w-[100%] max-w-3xl mx-auto mt-12 bg-white shadow-xl rounded-2xl py-8 px-4 sm:px-6 md:px-8 text-center">
-        <h2 className="text-gray-900 text-2xl font-semibold mb-6">Make a Donation</h2>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-6">
+          Make a <span className="border-b-1 border-blue-500"> Donation</span>
+        </h2>
 
         {/* Name */}
         <input
@@ -104,7 +109,7 @@ export default function DonatePage() {
          `}
         >{submitting ? 'Proccessing...' : 'Donate'}</button>
 
-        <p className="mt-6 text-sm text-gray-500">
+        <p className="mt-6 text-sm text-gray-600 mt-5">
           100% of your donation goes into building and maintaining Pexelxus.
         </p>
       </form>

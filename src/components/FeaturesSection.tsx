@@ -19,12 +19,13 @@ const FeaturesSection = () => {
             { icon: Users, title: "Gift & Connect", desc: "Gift airtime/data & share moments." },
             { icon: Shield, title: "Safe & Secure", desc: "Your transactions are encrypted and safe." },
             { icon: Zap, title: "Lightning Fast", desc: "Everything happens in seconds, not minutes." },
-            { icon: ArrowRight, title: "More Coming Soon", desc: "We’re building Nigeria’s true super app." },
+            { icon: ArrowRight, title: "More Coming Soon", desc: "We're building Nigeria's true super app." },
           ].map((f, i) => (
             <motion.div key={i}  
               initial={{opacity: 0, x: '30px'}}
               whileInView={{opacity: 1, x: '0px'}}
-              transition={{duration: 0.5, ease: 'linear'}}
+              exit={{opacity: 0, x: '30px'}}
+              transition={{duration: 0.5, ease: 'easeInOut'}}
               viewport={{ 
               margin: "0px 0px -12% 0px" 
             }}

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link"
 import {
   Accordion,
@@ -25,7 +26,8 @@ const FaqSection = () => {
             <AccordionContent className="text-gray-800">
                PexelXus is a Nigerian startup where you can buy airtime, data, 
               gift friends, and share content. We aim to make digital life 
-              easier and more connected.
+              easier and more connected. Want to learn more? Go to 
+              <Link href="/about" className="border-b-1 border-blue-500"> About page</Link>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

@@ -35,7 +35,7 @@ const Footer = () => {
       className="text-center text-[0.9rem] sm: sm:text-md md:text-md lg:text-1xl sm:text-[0.9rem] md:text-[1rem] lg:text-[1rem] text-gray-100 border-l-3 border-r-3 border-green-500 px-3 mt-[3rem] mx-4 sm:mx-8 md:mx-15 lg:mx-25 w-fit">
         Gift Airtime • Pay Bills • Flex with Friends.
       </motion.p>
-      <div className="flex items-center justify-center px-4 md:px-8 mt-15 mb-8">
+      <div className="flex items-center justify-center px-4 md:px-8 mt-25 mb-8">
         <div className="flex flex-col items-center justify-center">
           <p className="text-[0.9rem]">Follow Us:</p>
           <div className="flex items-center justify-center gap-3 mt-3">
